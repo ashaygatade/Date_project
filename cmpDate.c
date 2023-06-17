@@ -6,11 +6,22 @@
 //int cmp(int , int );		/*this might also be written in dtmanip.h file also*/
 
 #include"dtmanip.h"
+#include<stdio.h>
+#include<stdlib.h>
+#include<string.h>
 
 int cmpDate(char *date1, char *date2)
 {
-	splitDate(date1, &dd1, &mm1, &yyyy1);
-	splitDate(date2, &dd2, &mm2, &yyyy2);
+	/*if( !isValid(date1) ) {
+		printf("date1 is not valid\n");
+		exit(-1);
+	}
+	if( !isValid(date2) ) {
+		printf("date2 is not valid\n");
+		exit(-1);
+	}*/
+	//splitDate(date1, &dd1, &mm1, &yyyy1);	/*isValid(date1) has alreadt split the date, so calling splitDate again should not be done*/
+	//splitDate(date2, &dd2, &mm2, &yyyy2);
 
 	int res = cmp(yyyy1, yyyy2);
 	if(res == 1) {

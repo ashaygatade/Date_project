@@ -9,9 +9,20 @@ int diffDays(char *date1, char *date2)
 {
 	char *str_to_check, *greater_date;
 	int greater_year, smaller_year, cmp_ret_val, years_count = 0, leap_year_count = 0;
+	
+	/*if( !isValid(date1) ) {
+                printf("date1 is not valid\n");
+                exit(-1);
+        }
+        if( !isValid(date2) ) {
+                printf("date2 is not valid\n");
+                exit(-1);
+        }*/
 
-	splitDate(date1, &dd1, &mm1, &yyyy1);
-	splitDate(date2, &dd2, &mm2, &yyyy2);
+	printf("Checking validity/format for date1...\n");
+	/*splitDate(date1, &dd1, &mm1, &yyyy1);*/
+	printf("Checking validity/format for date2...\n");
+	/*splitDate(date2, &dd2, &mm2, &yyyy2);*/
 
 	if(yyyy1 == yyyy2)		/*if 2 dates are from same year*/
 		return abs( julian(dd1, mm1, yyyy1) - julian(dd2, mm2, yyyy2) );	/*return the difference. abs() requres stdlib.h*/

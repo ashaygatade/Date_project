@@ -1,0 +1,27 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+OBJECT_FILES	Makefile	/^OBJECT_FILES=cmpDate.o datefmt.o diffDays.o isLeap.o isValid.o julian.o weekday.o main.o$/;"	m
+TARGET_FILE	Makefile	/^TARGET_FILE=final_executable$/;"	m
+cmp	cmpDate.c	/^int cmp(int num1, int num2)$/;"	f
+cmpDate	cmpDate.c	/^int cmpDate(char *date1, char *date2)$/;"	f
+dd	dtmanip.h	/^int dd, mm, yyyy;	\/*These should be global variables in main.c*\/$/;"	v
+dd1	dtmanip.h	/^int dd1, mm1, yyyy1, dd2, mm2, yyyy2;	\/*made for functions like diffDays, dateCmp*\/$/;"	v
+dd2	dtmanip.h	/^int dd1, mm1, yyyy1, dd2, mm2, yyyy2;	\/*made for functions like diffDays, dateCmp*\/$/;"	v
+diffDays	diffDays.c	/^int diffDays(char *date1, char *date2)$/;"	f
+isLeap	isLeap.c	/^int isLeap(int yyyy)$/;"	f
+isValid	isValid.c	/^int isValid(char *date)$/;"	f
+julian	julian.c	/^int julian(int dd, int mm, int yyyy)$/;"	f
+main	main.c	/^int main()$/;"	f
+mm	dtmanip.h	/^int dd, mm, yyyy;	\/*These should be global variables in main.c*\/$/;"	v
+mm1	dtmanip.h	/^int dd1, mm1, yyyy1, dd2, mm2, yyyy2;	\/*made for functions like diffDays, dateCmp*\/$/;"	v
+mm2	dtmanip.h	/^int dd1, mm1, yyyy1, dd2, mm2, yyyy2;	\/*made for functions like diffDays, dateCmp*\/$/;"	v
+revJulian	julian.c	/^void revJulian(int julian_num, int yyyy, int *dd, int *mm)$/;"	f
+splitDate	datefmt.c	/^void splitDate(char *date, int *dd, int *mm, int *yyyy)$/;"	f
+weekDay	weekday.c	/^void weekDay(char *date, char *week_day)$/;"	f
+yyyy	dtmanip.h	/^int dd, mm, yyyy;	\/*These should be global variables in main.c*\/$/;"	v
+yyyy1	dtmanip.h	/^int dd1, mm1, yyyy1, dd2, mm2, yyyy2;	\/*made for functions like diffDays, dateCmp*\/$/;"	v
+yyyy2	dtmanip.h	/^int dd1, mm1, yyyy1, dd2, mm2, yyyy2;	\/*made for functions like diffDays, dateCmp*\/$/;"	v

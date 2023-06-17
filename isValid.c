@@ -5,11 +5,14 @@
 /*Return value: SUCCESS = 1, FAILURE = 0*/
 
 #include"dtmanip.h"
+#include<string.h>
 
 int isValid(char *date)
 {
+	if(strlen(date)!=10 || date[2]!='/' || date[5]!='/')
+		return 0;	/*Chances of format viloation*/
 	splitDate(date, &dd, &mm, &yyyy);
-	if(dd>=1 && dd>=31 && mm>=1 && mm<=12 && yyyy>0) {
+	if( (dd>=1 && dd<=31) && (mm>=1 && mm<=12) && yyyy>0 ) {
 		switch(mm) {
 		case 1:	/*January*/
 			return 1;
@@ -28,24 +31,24 @@ int isValid(char *date)
 		case 3:	/*March*/
 			return 1;
 		case 4:	/*April*/
-			if(dd==31)
+			if(dd>=31)
 			return 0;
 		case 5:	/*May*/
 			return 1;
 		case 6:	/*June*/
-			if(dd==31)
+			if(dd>=31)
 			return 0;
 		case 7:	/*July*/
 			return 1;
 		case 8:	/*August*/
 			return 1;
 		case 9:	/*September*/
-			if(dd==31)
+			if(dd>=31)
 			return 0;
 		case 10: /*October*/
 			return 1;
 		case 11: /*November*/
-			if(dd==31)
+			if(dd>=31)
 			return 0;
 		case 12: /*December*/
 			return 1;
